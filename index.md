@@ -19,7 +19,7 @@ Syntax highlighted code block
 - List
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Persona 5](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjAxPDL57bgAhVLwVkKHYIWCdwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FPS4Banners%2Fcomments%2F53oup9%2Fpersona_5%2F&psig=AOvVaw1Yy1GxvVKOyKHV7A4gNupD&ust=1550081984463519)
+[Link](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjAxPDL57bgAhVLwVkKHYIWCdwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FPS4Banners%2Fcomments%2F53oup9%2Fpersona_5%2F&psig=AOvVaw1Yy1GxvVKOyKHV7A4gNupD&ust=1550081984463519) and ![Persona 5](source)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
