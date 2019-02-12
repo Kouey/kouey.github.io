@@ -17,13 +17,9 @@ Syntax highlighted code block
 
 - Bulleted
 - List
-
-1. Numbered
-2. List
-
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Persona 5](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjAxPDL57bgAhVLwVkKHYIWCdwQjRx6BAgBEAU&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FPS4Banners%2Fcomments%2F53oup9%2Fpersona_5%2F&psig=AOvVaw1Yy1GxvVKOyKHV7A4gNupD&ust=1550081984463519)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -31,7 +27,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kouey/kouey.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
