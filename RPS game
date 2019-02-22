@@ -1,0 +1,118 @@
+import random
+#_________________________________________________________________________
+robot_score = 0
+human_score = 0
+print ("Let's play a game of Jaken!")
+play_again = input().lower
+while play_again != "no":
+    choice_list = ['Rock', 'Paper', 'Scissors']
+    random_ch = random.SystemRandom()
+    choice = random.choice(choice_list)
+    print ("Choose your WEAPON!")
+    answer = input().lower()
+#_________________________________________________________________________
+
+#Rock results
+    print (choice)
+    if answer == "rock" and choice == "Rock":
+        print ("    It's a tie!")
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+        
+
+    if answer == "scissors" and choice == "Rock":
+        print ("    I won!")
+        robot_score = robot_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+
+    if answer == "paper" and choice == "Rock":
+        print ("    You won!")
+        human_score = human_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        
+        play_again = input()
+#_________________________________________________________________________
+
+#Paper results
+    if answer == "paper" and choice == "Paper":
+        print ("    Issa tie.")
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+
+    if answer == "scissors" and choice == "Paper":
+        print ("    Dang it!")
+        human_score = human_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+
+    if answer == "rock" and choice == "Paper":
+        print ("    Ha! Loser!")
+        robot_score = robot_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+#_________________________________________________________________________
+
+#Scissor results
+    if answer == "scissors" and choice == "Scissors":
+        print ("    Tied!")
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+
+    if answer == "rock" and choice == "Scissors":
+        print ("    Oof!")
+        human_score = human_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        print ("    Play Again?")
+        play_again = input()
+
+    if answer == "paper" and choice == "Scissors":
+        robot_score = robot_score + 1
+        print ("Your score is:")
+        print (human_score)
+        print ("My (the robot) score is:")
+        print (robot_score)
+        
+        print ("    Can I get an F in the chat for your poor soul!")
+        F = input()
+        while F != "F":
+           print ("    cAn I gEt An F iN tHe ChAr?!?")
+           F = input()
+           print ("F")
+           print ("LOL")
+           print ("    Play Again?")
+           play_again = input()
+
+#___________________________________END___________________________________
+           
