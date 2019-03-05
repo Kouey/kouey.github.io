@@ -1,0 +1,170 @@
+import random
+#____________________________________________________MISC
+armour_points = 0
+health = 100
+print ("Welcome to Chuzyaown Adventura")
+print("----PRESS START----")
+input()
+choice_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+random_ch = random.SystemRandom()
+choice = random.choice(choice_list)
+print("What is thy name?")
+name = input()
+#____________________________________________________
+print ("-You wake up in an silent, barren, humid cave by yourself.-")
+print ("-There are 2 passage ways, numbered 1 and 2-")
+print ("-Choose to go through one of them.-")
+passage = input()
+#____________________________________________________PASSAGE 1
+if passage == '1':
+    print("-You go through passage 1 and the end of the tunnel you suddenly slip and bang your head. RIP-")
+    print ("--Play Again?--")
+    play_again = input()
+#____________________________________________________PASSAGE 2
+elif passage == '2':
+    print("-You walk through the tunnel you see a light, as you reach it you are blinded by the light, as your eyes adjust to the light. You are attacked by a small weak looking goblin. What will you do?-")
+    print("--Fight--")
+    print("--Talk--")
+    print("--Run--")
+    choice1 = input().lower()
+#____________________________________________________FIGHT
+    if choice1 == "fight":
+            print("-You decided to punch the goblin. I will now roll the die. You rolled a "+ choice +".-")
+#____________________________________________________DEATH
+            if choice == '1' or choice == '2' or choice == '3' or choice == '4' or choice == '5' or choice == '6':
+                print("-You failed!-")
+                print("-The Goblin dodges your punch and pushes you.-")
+                print("-You fall and bang your head-")
+                print("-Ha. RIP-")
+#--------------------------------------------------------------------------------------------------------------------
+
+#____________________________________________________ok roll
+            if choice == '7' or choice == '8' or choice =='9' or choice =='10' or choice == '11' or choice =='12':
+                print("-You punch the Goblin.-")
+                print("-But your punch was weak.-")
+                print("-The Goblin attacks back taking 25 health points from you.-")
+                health = health - 25
+                print ('-Your health is now-')
+                print(health)
+                print("-Will you attack again?-")
+                choice4 =input().lower()
+                if choice4 == "yes":
+                    print("-You decided to attack the goblin. I will now roll the die again. You rolled a "+ choice +".-")
+                #____________________________________________________DEATH
+                if choice == '1' or choice == '2' or choice == '3' or choice == '4' or choice == '5' or choice == '6':
+                    print("-You failed!-")
+                    print("-The Goblin dodges your punch and pushes you.-")
+                    print("-You fall and bang your head-")
+                    print("-Ha. RIP-")
+                    #____________________________________________________ok roll
+                if choice == '7' or choice == '8' or choice =='9' or choice =='10' or choice == '11' or choice =='12':
+                    print("-You punch the Goblin.-")
+                    print("-But your punch was weak.-")
+                    print("-The Goblin attacks back taking 25 health points from you.-")
+                    health = health - 25
+                    print ('-Your health is now-')
+                    #____________________________________________________good roll
+                if choice == '13' or choice == '14' or choice == '15' or choice == '16':
+                    print("-Success!-")
+                    print("-Your punch knocked the Goblin out-")
+                    print("-Will you loot the Goblin?-")
+                    choice3 =input().lower()
+                    if choice3 == "yes":
+                        print("-You found a rusty key-")
+                    if choice3 == "no":
+                        print("-THE GOBLIN JUMPS BACK UP AND ATTACKS YOU!-")
+                        print("-YOU CAN'T REACT-")
+                        print("-IT TEARS OUT YOUR THOUT AND YOU DIE-")
+                        print("--RIP--")
+                        #____________________________________________________great roll
+                if choice == '17' or choice == '18' or choice == '19' or choice == '20':
+                    print("-SUCCESS! CRITIKAL HIT!-")
+                    print("-ONE PUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCH!-")
+                    print("-Your punch obliterated the Goblin-")
+                    print("-You recieved a rusty key-")
+                    print("-With the newly recieved key-")
+                    print("-You are teleported to a tresure chest with three key holes choose one key hole-")
+                    choice6 = input().lower()
+                    if choice6 == "1":
+                        print("-Congrats You won the game OWO WOW-")
+                    if choice6 == "2" or choice6 == "2":
+                        print("-OOF RIP YOU DIED INSTANTLY-")
+#--------------------------------------------------------------------------------------------------------------------
+#____________________________________________________good roll
+            if choice == '13' or choice == '14' or choice == '15' or choice == '16':
+                print("-Success!-")
+                print("-Your punch knocked the Goblin out-")
+                print("-Will you loot the Goblin?-")
+                choice3 =input().lower()
+                if choice3 == "yes":
+                    print("-You found a rusty key-")
+                    print("-With the newly recieved key-")
+                    print("-You are teleported to a tresure chest with three key holes choose one key hole-")
+                    choice6 = input().lower()
+                    if choice6 == "1":
+                        print("-Congrats You won the game OWO WOW-")
+                    if choice6 == "2" or choice6 == "2":
+                        print("-OOF RIP YOU DIED INSTANTLY-")
+                if choice3 == "no":
+                    print("-THE GOBLIN JUMPS BACK UP AND ATTACKS YOU!-")
+                    print("-YOU CAN'T REACT-")
+                    print("-IT TEARS OUT YOUR THROUT AND YOU DIE-")
+                    print("--RIP--")
+#____________________________________________________great roll
+            if choice == '17' or choice == '18' or choice == '19' or choice == '20':
+                print("-SUCCESS! CRITIKAL HIT!-")
+                print("-ONE PUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCH!-")
+                print("-Your punch obliterated the Goblin-")
+                print("-You recieved a rusty key-")
+                print("-With the newly recieved key-")
+                print("-You are teleported to a tresure chest with three key holes choose one key hole-")
+                choice6 = input().lower()
+                if choice6 == "1":
+                    print("-Congrats You won the game OWO WOW-")
+                if choice6 == "2" or choice6 == "2":
+                    print("-OOF RIP YOU DIED INSTANTLY-")
+#____________________________________________________TALK
+    elif choice1 == "talk":
+            print("-You decieded to talk to the Goblin.-")
+            print("-What will you say?-")
+            print("--A)Hello there!--")
+            print("--B)Oi. U fok wot m8?--")
+            print("--C)I mean no harm!--")
+            choice2 = input().lower()
+            if choice2 == "a":
+                print("-THE GOBLIN JUMPS ON YOU AND KILLS YOU!-")
+                print("-RIP-")
+            if choice2 == "b":
+                print("-The Goblin responds, ""Oi. m8. hoW yA arE BlOke?""-")
+                print("""I fOuND thIS tiNG HeRRE. IzzA keY""")
+                print("YoU CaN haVE iT!")
+                print("-You take the key-")
+            if choice2 == "c":
+                print("-The Goblin runs off and leaves a rusty key.-")
+                print("-With the newly recieved key-")
+                print("-You are teleported to a tresure chest with three key holes choose one key hole-")
+                choice6 = input().lower()
+                if choice6 == "1":
+                    print("-Congrats You won the game OWO WOW-")
+                if choice6 == "2" or choice6 == "2":
+                    print("-OOF RIP YOU DIED INSTANTLY-")
+                
+#____________________________________________________RUN
+    elif choice1 == "run":
+            print("-You decided to run.-")
+            print("-Aaanndd. You know what happens?-")
+            print("-You slip.....-")
+            print("-and you fall taking 99% health damage-")
+            print("-Will you continue to run?-")
+            choice5 = input().lower()
+            if choice5 == "yes":
+                print("-You keep running and slip again this time taking only 1% damage.-")
+                print("Hey what luck you only... Oh yeah.")
+                print("-YOU'RE DEAD. LOL. RIP-")
+            if choice5 == "no":
+                print("-You stopped running -")
+                print("-you hear foot steps getting closer and closer.-")
+                print("-IT'S THE GOBLIN AND HE'S HERE FOR YOU!-")
+                print("-He jumps on you and defeats you. RIP Coward-")
+#____________________________________________________CLOSING SCENE
+
